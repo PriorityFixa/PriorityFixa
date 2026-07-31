@@ -22,7 +22,7 @@
 
 body{
     background:var(--light);
-    color:var(--dark);
+    color:#0088CC;
     line-height:1.7;
 }
 
