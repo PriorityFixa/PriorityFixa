@@ -169,7 +169,7 @@ Helping businesses attract leads, save time, and grow through websites, automati
 
 ### ⭐ PriorityFixa Agency
 
-**Fix the digital gaps. Grow with confidence.**## Hi there 👋
+**Fix the digital gaps. Grow with confidence.
 
 <!--
 **PriorityFixa/PriorityFixa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
