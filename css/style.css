@@ -93,6 +93,34 @@ a:focus-visible,button:focus-visible{
 }
 .nav-cta i{margin-left:8px}
 .menu-toggle{display:none;background:none;border:0;color:white;font-size:22px}
+/* Logo */
+/* ================================
+   PRIORITYFIXA LOGO
+================================ */
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 175px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 145px;
+  }
+}
 
 /* Typography */
 .eyebrow{
