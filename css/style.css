@@ -389,7 +389,24 @@ a:focus-visible,button:focus-visible{
 .cta-contact .btn{width:100%}
 .cta-contact>a:not(.btn){font-size:11px;color:#9baac0}
 .cta-contact>a:not(.btn) i{color:var(--blue);margin-right:8px}
+/* Footer Logo */
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+.footer-logo {
+  width: 190px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.03);
+}
 /* Footer */
 .footer{border-top:1px solid rgba(255,255,255,.06);padding:30px 0 18px}
 .footer-main{display:flex;align-items:center;justify-content:space-between}
