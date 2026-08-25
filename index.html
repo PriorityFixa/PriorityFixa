@@ -11,7 +11,7 @@
   >
 
   <!-- =====================================================
-       PRIMARY SEO
+       SEO
   ====================================================== -->
 
   <title>
@@ -20,7 +20,7 @@
 
   <meta
     name="description"
-    content="PriorityFixa Agency builds professional websites, online sales systems, registration systems and digital workflows that help businesses and organisations attract customers, collect payments and save time."
+    content="PriorityFixa Agency builds professional websites, online sales systems, registration systems and digital workflows for growing businesses, organisations, trainers and service providers."
   >
 
   <meta
@@ -33,15 +33,9 @@
     content="#020b20"
   >
 
-
-  <!-- =====================================================
-       CANONICAL
-       Keep this once priorityfixa.com is live.
-  ====================================================== -->
-
-  <link
-    rel="canonical"
-    href="https://priorityfixa.com/"
+  <meta
+    name="author"
+    content="PriorityFixa Agency"
   >
 
 
@@ -56,7 +50,7 @@
 
   <meta
     property="og:description"
-    content="Professional websites, online sales, registration, payments and digital systems for growing businesses and organisations."
+    content="Professional websites, online sales, registrations, payments and digital systems for growing businesses and organisations."
   >
 
   <meta
@@ -65,18 +59,8 @@
   >
 
   <meta
-    property="og:url"
-    content="https://priorityfixa.com/"
-  >
-
-  <meta
-    property="og:image"
-    content="https://priorityfixa.com/images/og-image.jpg"
-  >
-
-  <meta
-    property="og:image:alt"
-    content="PriorityFixa Agency — Websites, Automation & Digital Systems"
+    property="og:site_name"
+    content="PriorityFixa Agency"
   >
 
 
@@ -96,12 +80,7 @@
 
   <meta
     name="twitter:description"
-    content="Professional websites, online sales, registration and digital systems for growing businesses and organisations."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://priorityfixa.com/images/og-image.jpg"
+    content="Professional websites, online sales, registrations, payments and digital systems for growing businesses and organisations."
   >
 
 
@@ -115,28 +94,10 @@
 
 
   <!-- =====================================================
-       STRUCTURED DATA
-  ====================================================== -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "PriorityFixa Agency",
-    "url": "https://priorityfixa.com/",
-    "email": "hello@priorityfixa.com",
-    "description": "PriorityFixa Agency builds websites, online sales systems, registration systems, payment flows and digital workflows for businesses and organisations.",
-    "sameAs": [
-      "https://www.facebook.com/priorityfixa",
-      "https://www.linkedin.com/company/priorityfixa/",
-      "https://www.instagram.com/priorityfixa/"
-    ]
-  }
-  </script>
-
-
-  <!-- =====================================================
-       FONTS
+       GOOGLE FONTS
+       
+       Syne  = Headings / Display
+       DM Sans = Body / Interface
   ====================================================== -->
 
   <link
@@ -161,6 +122,11 @@
   ====================================================== -->
 
   <link
+    rel="preconnect"
+    href="https://cdnjs.cloudflare.com"
+  >
+
+  <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   >
@@ -174,6 +140,42 @@
     rel="stylesheet"
     href="css/style.css"
   >
+
+
+  <!-- =====================================================
+       FONT SAFETY FALLBACK
+       
+       Ensures the intended typography is established
+       before external stylesheet rules are applied.
+  ====================================================== -->
+
+  <style>
+
+    html {
+      font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Syne", Arial, Helvetica, sans-serif;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    }
+
+  </style>
 
 </head>
 
@@ -234,7 +236,7 @@
       <button
         class="menu-toggle"
         type="button"
-        aria-label="Open navigation menu"
+        aria-label="Open menu"
         aria-expanded="false"
         aria-controls="main-nav"
       >
@@ -288,14 +290,8 @@
           class="nav-cta"
           href="#contact"
         >
-
           Let's Talk
-
-          <i
-            class="fa-solid fa-arrow-right"
-            aria-hidden="true"
-          ></i>
-
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
 
       </nav>
@@ -306,7 +302,12 @@
 
 
 
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
   <main>
+
 
 
     <!-- =====================================================
@@ -315,7 +316,7 @@
 
     <section
       class="hero section"
-      aria-labelledby="hero-title"
+      id="home"
     >
 
       <div class="container hero-grid">
@@ -325,7 +326,6 @@
 
         <div class="hero-copy reveal">
 
-
           <p class="eyebrow">
             WEBSITES &middot;
             AUTOMATION &middot;
@@ -333,22 +333,15 @@
           </p>
 
 
-          <h1 id="hero-title">
-
+          <h1>
             Websites & Digital Systems
-
             <br>
-
             For Businesses,
-
             <br>
 
             <span>
-
               Organisations &
-
               <b>Growing Brands.</b>
-
             </span>
 
           </h1>
@@ -366,7 +359,6 @@
 
 
           <div class="hero-actions">
-
 
             <a
               href="#contact"
@@ -397,21 +389,14 @@
 
             </a>
 
-
           </div>
 
 
-          <div
-            class="hero-mini-stats"
-            aria-label="Our approach"
-          >
-
+          <div class="hero-mini-stats">
 
             <div>
 
-              <strong>
-                01
-              </strong>
+              <strong>01</strong>
 
               <span>
                 Design
@@ -422,9 +407,7 @@
 
             <div>
 
-              <strong>
-                02
-              </strong>
+              <strong>02</strong>
 
               <span>
                 Connect
@@ -435,16 +418,13 @@
 
             <div>
 
-              <strong>
-                03
-              </strong>
+              <strong>03</strong>
 
               <span>
                 Automate
               </span>
 
             </div>
-
 
           </div>
 
@@ -484,13 +464,10 @@
               </div>
 
               <span>
-                BUSINESS WEBSITE
+                priorityfixa.com
               </span>
 
-              <i
-                class="fa-solid fa-ellipsis"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-ellipsis"></i>
 
             </div>
 
@@ -501,73 +478,44 @@
             <div class="dash-body">
 
 
+              <!-- SIDEBAR -->
+
               <div class="dash-sidebar">
 
                 <span class="active">
-
-                  <i
-                    class="fa-solid fa-table-cells-large"
-                    aria-hidden="true"
-                  ></i>
-
+                  <i class="fa-solid fa-table-cells-large"></i>
                 </span>
 
-
                 <span>
-
-                  <i
-                    class="fa-solid fa-chart-line"
-                    aria-hidden="true"
-                  ></i>
-
+                  <i class="fa-solid fa-chart-line"></i>
                 </span>
 
-
                 <span>
-
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    aria-hidden="true"
-                  ></i>
-
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </span>
 
-
                 <span>
-
-                  <i
-                    class="fa-solid fa-gear"
-                    aria-hidden="true"
-                  ></i>
-
+                  <i class="fa-solid fa-gear"></i>
                 </span>
 
               </div>
 
 
 
-              <div class="dash-content">
+              <!-- DASHBOARD CONTENT -->
 
+              <div class="dash-content">
 
                 <p>
                   BUSINESS DASHBOARD
                 </p>
 
-
                 <h3>
-
                   Powering Growth
-
                   <br>
-
                   Through
-
-                  <span>
-                    Technology
-                  </span>
-
+                  <span>Technology</span>
                 </h3>
-
 
 
                 <div class="dash-cards">
@@ -606,10 +554,11 @@
 
                   </div>
 
-
                 </div>
 
 
+
+                <!-- CHART -->
 
                 <div class="chart">
 
@@ -657,17 +606,15 @@
                PAYMENT CARD
           ================================================== -->
 
-          <div class="floating-card payment-card">
+          <div
+            class="floating-card payment-card"
+          >
 
             <div class="float-icon orange">
 
-              <i
-                class="fa-solid fa-credit-card"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-credit-card"></i>
 
             </div>
-
 
             <div>
 
@@ -693,17 +640,15 @@
                AUTOMATION CARD
           ================================================== -->
 
-          <div class="floating-card automation-card">
+          <div
+            class="floating-card automation-card"
+          >
 
             <div class="float-icon blue">
 
-              <i
-                class="fa-solid fa-bolt"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-bolt"></i>
 
             </div>
-
 
             <div>
 
@@ -729,10 +674,7 @@
 
           <div class="visual-badge badge-cart">
 
-            <i
-              class="fa-solid fa-cart-shopping"
-              aria-hidden="true"
-            ></i>
+            <i class="fa-solid fa-cart-shopping"></i>
 
             <span>
               Online Sales
@@ -743,17 +685,13 @@
 
           <div class="visual-badge badge-shield">
 
-            <i
-              class="fa-solid fa-shield-halved"
-              aria-hidden="true"
-            ></i>
+            <i class="fa-solid fa-shield-halved"></i>
 
             <span>
               Secure Payments
             </span>
 
           </div>
-
 
         </div>
 
@@ -764,16 +702,12 @@
 
 
     <!-- =====================================================
-         SYSTEMS WE BUILD
+         TRUST / SYSTEMS
     ====================================================== -->
 
-    <section
-      class="trust section-sm"
-      aria-label="Digital systems PriorityFixa builds"
-    >
+    <section class="trust section-sm">
 
       <div class="container">
-
 
         <p class="trust-label">
           DIGITAL SYSTEMS WE BUILD
@@ -782,70 +716,34 @@
 
         <div class="logo-row">
 
-
           <span>
-
-            <i
-              class="fa-solid fa-globe"
-              aria-hidden="true"
-            ></i>
-
+            <i class="fa-solid fa-globe"></i>
             Websites
-
           </span>
 
-
           <span>
-
-            <i
-              class="fa-solid fa-credit-card"
-              aria-hidden="true"
-            ></i>
-
+            <i class="fa-solid fa-credit-card"></i>
             Online
             <br>
             Payments
-
           </span>
 
-
           <span>
-
-            <i
-              class="fa-solid fa-bolt"
-              aria-hidden="true"
-            ></i>
-
+            <i class="fa-solid fa-bolt"></i>
             Automation
-
           </span>
 
-
           <span>
-
-            <i
-              class="fa-solid fa-users"
-              aria-hidden="true"
-            ></i>
-
+            <i class="fa-solid fa-users"></i>
             Registration
-
           </span>
 
-
           <span>
-
-            <i
-              class="fa-solid fa-chart-pie"
-              aria-hidden="true"
-            ></i>
-
+            <i class="fa-solid fa-chart-pie"></i>
             Business
             <br>
             Systems
-
           </span>
-
 
         </div>
 
@@ -862,40 +760,29 @@
     <section
       class="section"
       id="services"
-      aria-labelledby="services-title"
     >
 
       <div class="container">
 
-
         <div class="section-heading center reveal">
-
 
           <p class="eyebrow">
             WHAT WE BUILD
           </p>
 
-
-          <h2 id="services-title">
-
+          <h2>
             Digital Solutions For
-
             <span>
               Growing Businesses
             </span>
-
           </h2>
 
-
           <p>
-
             Practical digital systems that help your
             business present itself professionally,
             generate leads, collect payments and
             save time.
-
           </p>
-
 
         </div>
 
@@ -904,275 +791,353 @@
         <div class="services-grid">
 
 
-          <!-- =================================================
-               SERVICE 01
-          ================================================== -->
+          <!-- SERVICE 01 -->
 
           <article class="service-card reveal">
 
-
             <div class="service-icon">
 
-              <i
-                class="fa-solid fa-laptop-code"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-laptop-code"></i>
 
             </div>
-
 
             <span class="service-number">
               01
             </span>
 
-
             <h3>
               Websites & Landing Pages
             </h3>
 
-
             <p>
-
               Professional websites and focused
               landing pages that clearly communicate
               your offer and guide visitors towards
               action.
-
             </p>
-
 
             <a href="#contact">
 
               Learn More
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
 
 
-          <!-- =================================================
-               SERVICE 02
-          ================================================== -->
+          <!-- SERVICE 02 -->
 
           <article
             class="service-card reveal delay-1"
           >
 
-
             <div class="service-icon">
 
-              <i
-                class="fa-solid fa-credit-card"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-users"></i>
 
             </div>
-
 
             <span class="service-number">
               02
             </span>
 
-
             <h3>
-              Online Sales & Payments
+              Registration Systems
             </h3>
 
-
             <p>
-
-              Let customers purchase products,
-              trainings, workshops, events and
-              services through a simple online
-              checkout experience.
-
+              Forms and digital flows for collecting
+              participant details, enquiries,
+              applications, bookings and event
+              registrations.
             </p>
-
 
             <a href="#contact">
 
               Learn More
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
 
 
-          <!-- =================================================
-               SERVICE 03
-          ================================================== -->
+          <!-- SERVICE 03 -->
 
           <article
             class="service-card featured reveal delay-2"
           >
 
-
             <div class="service-icon orange-icon">
 
-              <i
-                class="fa-solid fa-users"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-credit-card"></i>
 
             </div>
-
 
             <span class="service-number">
               03
             </span>
 
-
             <h3>
-              Registration Systems
+              Online Payments
             </h3>
 
-
             <p>
-
-              Forms and digital flows for collecting
-              participant details, enquiries,
-              applications, bookings and event
-              registrations.
-
+              Let customers pay online for products,
+              trainings, workshops, events and
+              services through a simple checkout
+              experience.
             </p>
-
 
             <a href="#contact">
 
               Learn More
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
 
 
-          <!-- =================================================
-               SERVICE 04
-          ================================================== -->
+          <!-- SERVICE 04 -->
 
           <article
             class="service-card reveal delay-3"
           >
 
-
             <div class="service-icon">
 
-              <i
-                class="fa-solid fa-bolt"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-bolt"></i>
 
             </div>
-
 
             <span class="service-number">
               04
             </span>
 
-
             <h3>
               Automation & Follow-Up
             </h3>
 
-
             <p>
-
               Automate confirmations, reminders,
               notifications and follow-up so less
               time is spent on repetitive tasks.
-
             </p>
-
 
             <a href="#contact">
 
               Learn More
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
 
 
-          <!-- =================================================
-               SERVICE 05
-          ================================================== -->
+          <!-- SERVICE 05 -->
 
           <article
             class="service-card reveal delay-4"
           >
 
-
             <div class="service-icon">
 
-              <i
-                class="fa-solid fa-chart-pie"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-chart-pie"></i>
 
             </div>
-
 
             <span class="service-number">
               05
             </span>
 
-
             <h3>
               Business Systems
             </h3>
 
-
             <p>
-
               Digital workflows that keep orders,
               customers, registrations, enquiries
               and business information organised.
-
             </p>
-
 
             <a href="#contact">
 
               Learn More
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
 
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROCESS
+    ====================================================== -->
+
+    <section
+      class="section process-section"
+      id="process"
+    >
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <p class="eyebrow">
+            OUR PROCESS
+          </p>
+
+          <h2>
+            From Idea
+            <span>
+              To Digital System
+            </span>
+          </h2>
+
+        </div>
+
+
+        <div class="process-line">
+
+
+          <article class="process-step reveal">
+
+            <div class="process-icon">
+
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <strong>01</strong>
+
+            <h3>
+              Discover
+            </h3>
+
+            <p>
+              We understand your business,
+              audience, offer and objectives.
+            </p>
 
           </article>
 
+
+
+          <article
+            class="process-step reveal delay-1"
+          >
+
+            <div class="process-icon">
+
+              <i class="fa-solid fa-pen-ruler"></i>
+
+            </div>
+
+            <strong>02</strong>
+
+            <h3>
+              Plan
+            </h3>
+
+            <p>
+              We map the customer journey and
+              determine what the system needs to do.
+            </p>
+
+          </article>
+
+
+
+          <article
+            class="process-step active reveal delay-2"
+          >
+
+            <div class="process-icon">
+
+              <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <strong>03</strong>
+
+            <h3>
+              Build
+            </h3>
+
+            <p>
+              We design and build the website,
+              forms, payments and digital workflows.
+            </p>
+
+          </article>
+
+
+
+          <article
+            class="process-step reveal delay-3"
+          >
+
+            <div class="process-icon">
+
+              <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+            <strong>04</strong>
+
+            <h3>
+              Launch
+            </h3>
+
+            <p>
+              We test the user journey and make
+              sure the system is ready for real users.
+            </p>
+
+          </article>
+
+
+
+          <article
+            class="process-step reveal delay-4"
+          >
+
+            <div class="process-icon">
+
+              <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <strong>05</strong>
+
+            <h3>
+              Improve
+            </h3>
+
+            <p>
+              We refine the system as your business
+              grows and your needs change.
+            </p>
+
+          </article>
 
         </div>
 
@@ -1184,13 +1149,11 @@
 
     <!-- =====================================================
          FEATURED PROJECTS
-         MOVED BEFORE PROCESS TO SHOW PROOF EARLIER
     ====================================================== -->
 
     <section
       class="section featured-projects"
       id="work"
-      aria-labelledby="work-title"
     >
 
       <div class="container">
@@ -1200,31 +1163,22 @@
 
         <div class="section-heading center reveal">
 
-
           <p class="eyebrow">
             FEATURED PROJECTS
           </p>
 
-
-          <h2 id="work-title">
-
+          <h2>
             Websites Built For
-
             <span>
               Real Businesses & Organisations
             </span>
-
           </h2>
 
-
           <p>
-
             We design digital experiences around
             each organisation's identity, audience
             and business goals.
-
           </p>
-
 
         </div>
 
@@ -1238,15 +1192,11 @@
           class="featured-project project-etf reveal"
         >
 
-
           <div class="project-showcase">
-
 
             <div class="project-browser">
 
-
               <div class="browser-top">
-
 
                 <div class="browser-dots">
 
@@ -1256,84 +1206,67 @@
 
                 </div>
 
-
                 <div class="browser-url">
                   Empowered Teachers Forum
                 </div>
 
-
               </div>
 
 
+              <div
+                class="project-screenshot-placeholder"
+              >
 
-              <!-- =================================================
-                   SCREENSHOT
-                   Replace the placeholder with the actual
-                   screenshot when ready.
-              ================================================== -->
+                <!--
+                  REPLACE WITH:
 
-              <div class="project-screenshot-placeholder">
-
+                  <img
+                    src="images/projects/empowered-teachers-forum.jpg"
+                    alt="Empowered Teachers Forum website"
+                    loading="lazy"
+                  >
+                -->
 
                 <div class="placeholder-content">
 
-
                   <div class="placeholder-icon">
 
-                    <i
-                      class="fa-solid fa-image"
-                      aria-hidden="true"
-                    ></i>
+                    <i class="fa-solid fa-image"></i>
 
                   </div>
-
 
                   <span>
                     WEBSITE SCREENSHOT
                   </span>
 
-
                   <strong>
                     Empowered Teachers Forum
                   </strong>
-
 
                   <small>
                     Screenshot placeholder
                   </small>
 
-
                 </div>
 
-
               </div>
-
 
             </div>
 
 
-
             <div class="project-brand-badge">
-
 
               <span>
                 WEBSITE PROJECT
               </span>
 
-
               <strong>
-
                 EMPOWERED
-
                 <br>
-
                 TEACHERS FORUM
-
               </strong>
 
-
             </div>
-
 
           </div>
 
@@ -1341,93 +1274,53 @@
 
           <div class="project-information">
 
-
             <p class="eyebrow project-eyebrow">
               PROJECT 01
             </p>
 
-
             <h3>
-
               Empowered Teachers
-
               <span>
                 Forum
               </span>
-
             </h3>
 
-
             <p class="project-description">
-
               A digital platform created for
               Empowered Teachers Forum to bring
               educator resources, professional
               opportunities, events and digital
               products together in one online
               experience.
-
             </p>
-
 
 
             <div class="project-services">
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-globe"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-globe"></i>
                 Website Design
-
               </span>
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-cart-shopping"></i>
                 Online Store
-
               </span>
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-credit-card"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-credit-card"></i>
                 Payments
-
               </span>
-
 
               <span>
-
-                <i
-                  class="fa-solid fa-users"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-users"></i>
                 Registration
-
               </span>
-
 
             </div>
 
 
-
             <div class="project-highlights">
-
 
               <div>
 
@@ -1467,25 +1360,19 @@
 
               </div>
 
-
             </div>
 
 
-
             <div class="project-actions">
-
 
               <a
                 href="#contact"
                 class="btn btn-outline"
               >
 
-                Discuss This Project
+                Enquire About Project
 
-                <i
-                  class="fa-solid fa-arrow-right"
-                  aria-hidden="true"
-                ></i>
+                <i class="fa-solid fa-arrow-right"></i>
 
               </a>
 
@@ -1497,16 +1384,11 @@
 
                 Build A Similar System
 
-                <i
-                  class="fa-solid fa-arrow-right"
-                  aria-hidden="true"
-                ></i>
+                <i class="fa-solid fa-arrow-right"></i>
 
               </a>
 
-
             </div>
-
 
           </div>
 
@@ -1522,15 +1404,11 @@
           class="featured-project project-sakwa reveal"
         >
 
-
           <div class="project-showcase">
-
 
             <div class="project-browser">
 
-
               <div class="browser-top">
-
 
                 <div class="browser-dots">
 
@@ -1540,80 +1418,67 @@
 
                 </div>
 
-
                 <div class="browser-url">
-                  Sakwa Wangara
+                  priorityfixa.github.io/SakwaWangara
                 </div>
-
 
               </div>
 
 
+              <div
+                class="project-screenshot-placeholder"
+              >
 
-              <!-- SCREENSHOT PLACEHOLDER -->
+                <!--
+                  REPLACE WITH:
 
-              <div class="project-screenshot-placeholder">
-
+                  <img
+                    src="images/projects/sakwa-wangara.jpg"
+                    alt="Sakwa Wangara website"
+                    loading="lazy"
+                  >
+                -->
 
                 <div class="placeholder-content">
 
-
                   <div class="placeholder-icon">
 
-                    <i
-                      class="fa-solid fa-image"
-                      aria-hidden="true"
-                    ></i>
+                    <i class="fa-solid fa-image"></i>
 
                   </div>
-
 
                   <span>
                     WEBSITE SCREENSHOT
                   </span>
 
-
                   <strong>
                     Sakwa Wangara
                   </strong>
-
 
                   <small>
                     Screenshot placeholder
                   </small>
 
-
                 </div>
 
-
               </div>
-
 
             </div>
 
 
-
             <div class="project-brand-badge">
-
 
               <span>
                 WEBSITE PROJECT
               </span>
 
-
               <strong>
-
                 SAKWA
-
                 <br>
-
                 WANGARA
-
               </strong>
 
-
             </div>
-
 
           </div>
 
@@ -1621,25 +1486,19 @@
 
           <div class="project-information">
 
-
             <p class="eyebrow project-eyebrow">
               PROJECT 02
             </p>
 
-
             <h3>
-
               Sakwa
-
               <span>
                 Wangara
               </span>
-
             </h3>
 
 
             <p class="project-description">
-
               A leadership and corporate training
               website designed to position Sakwa
               Wangara as a professional facilitator
@@ -1647,68 +1506,35 @@
               development, corporate training and
               specialist programmes in a clear,
               premium digital experience.
-
             </p>
-
 
 
             <div class="project-services">
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-globe"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-globe"></i>
                 Website Design
-
               </span>
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-people-group"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-people-group"></i>
                 Leadership
-
               </span>
 
-
               <span>
-
-                <i
-                  class="fa-solid fa-chalkboard-user"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-chalkboard-user"></i>
                 Corporate Training
-
               </span>
-
 
               <span>
-
-                <i
-                  class="fa-solid fa-envelope"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-envelope"></i>
                 Enquiries
-
               </span>
-
 
             </div>
 
 
-
             <div class="project-highlights">
-
 
               <div>
 
@@ -1748,28 +1574,21 @@
 
               </div>
 
-
             </div>
 
 
-
             <div class="project-actions">
-
 
               <a
                 href="https://priorityfixa.github.io/SakwaWangara/"
                 class="btn btn-outline"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View Sakwa Wangara live website"
               >
 
                 View Live Website
 
-                <i
-                  class="fa-solid fa-arrow-right"
-                  aria-hidden="true"
-                ></i>
+                <i class="fa-solid fa-arrow-right"></i>
 
               </a>
 
@@ -1781,269 +1600,15 @@
 
                 Build A Similar Website
 
-                <i
-                  class="fa-solid fa-arrow-right"
-                  aria-hidden="true"
-                ></i>
+                <i class="fa-solid fa-arrow-right"></i>
 
               </a>
 
-
             </div>
-
 
           </div>
 
         </article>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         PROCESS
-    ====================================================== -->
-
-    <section
-      class="section process-section"
-      id="process"
-      aria-labelledby="process-title"
-    >
-
-      <div class="container">
-
-
-        <div class="section-heading center reveal">
-
-
-          <p class="eyebrow">
-            OUR PROCESS
-          </p>
-
-
-          <h2 id="process-title">
-
-            From Idea
-
-            <span>
-              To Digital System
-            </span>
-
-          </h2>
-
-
-          <p>
-
-            A practical process designed to make sure
-            the final website or system supports the
-            way your business actually works.
-
-          </p>
-
-
-        </div>
-
-
-
-        <div class="process-line">
-
-
-          <!-- STEP 01 -->
-
-          <article class="process-step reveal">
-
-
-            <div class="process-icon">
-
-              <i
-                class="fa-solid fa-magnifying-glass"
-                aria-hidden="true"
-              ></i>
-
-            </div>
-
-
-            <strong>
-              01
-            </strong>
-
-
-            <h3>
-              Discover
-            </h3>
-
-
-            <p>
-
-              We understand your business,
-              audience, offer and objectives.
-
-            </p>
-
-
-          </article>
-
-
-
-          <!-- STEP 02 -->
-
-          <article
-            class="process-step reveal delay-1"
-          >
-
-
-            <div class="process-icon">
-
-              <i
-                class="fa-solid fa-pen-ruler"
-                aria-hidden="true"
-              ></i>
-
-            </div>
-
-
-            <strong>
-              02
-            </strong>
-
-
-            <h3>
-              Plan
-            </h3>
-
-
-            <p>
-
-              We map the customer journey and
-              determine what the system needs to do.
-
-            </p>
-
-
-          </article>
-
-
-
-          <!-- STEP 03 -->
-
-          <article
-            class="process-step active reveal delay-2"
-          >
-
-
-            <div class="process-icon">
-
-              <i
-                class="fa-solid fa-code"
-                aria-hidden="true"
-              ></i>
-
-            </div>
-
-
-            <strong>
-              03
-            </strong>
-
-
-            <h3>
-              Build
-            </h3>
-
-
-            <p>
-
-              We design and build the website,
-              forms, payments and digital workflows.
-
-            </p>
-
-
-          </article>
-
-
-
-          <!-- STEP 04 -->
-
-          <article
-            class="process-step reveal delay-3"
-          >
-
-
-            <div class="process-icon">
-
-              <i
-                class="fa-solid fa-rocket"
-                aria-hidden="true"
-              ></i>
-
-            </div>
-
-
-            <strong>
-              04
-            </strong>
-
-
-            <h3>
-              Launch
-            </h3>
-
-
-            <p>
-
-              We test the user journey and make
-              sure the system is ready for real users.
-
-            </p>
-
-
-          </article>
-
-
-
-          <!-- STEP 05 -->
-
-          <article
-            class="process-step reveal delay-4"
-          >
-
-
-            <div class="process-icon">
-
-              <i
-                class="fa-solid fa-chart-line"
-                aria-hidden="true"
-              ></i>
-
-            </div>
-
-
-            <strong>
-              05
-            </strong>
-
-
-            <h3>
-              Improve
-            </h3>
-
-
-            <p>
-
-              We refine the system as your business
-              grows and your needs change.
-
-            </p>
-
-
-          </article>
-
-
-        </div>
 
       </div>
 
@@ -2058,42 +1623,30 @@
     <section
       class="section packages-section"
       id="packages"
-      aria-labelledby="packages-title"
     >
 
       <div class="container">
 
-
         <div class="section-heading center reveal">
-
 
           <p class="eyebrow">
             DIGITAL SYSTEM PACKAGES
           </p>
 
-
-          <h2 id="packages-title">
-
+          <h2>
             Choose The Right
-
             <span>
               Setup For Your Business
             </span>
-
           </h2>
 
-
           <p>
-
             Start with a professional online presence,
             then add selling, registration and
             automation as your business grows.
-
           </p>
 
-
         </div>
-
 
 
         <div class="pricing-grid">
@@ -2105,144 +1658,76 @@
 
           <article class="pricing-card reveal">
 
-
             <div class="pricing-top">
-
 
               <p class="package-label">
                 STARTER
               </p>
 
-
               <h3>
                 Launch Online
               </h3>
 
-
               <p class="package-description">
-
                 A professional online presence for
                 presenting your business and collecting
                 enquiries or registrations.
-
               </p>
-
 
               <div class="package-price">
                 From KES 15,000
               </div>
 
-
               <p class="package-note">
                 One-time implementation
               </p>
 
-
             </div>
-
 
 
             <ul class="package-features">
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 One-page mobile-friendly website
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 WhatsApp integration
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Contact / enquiry / registration form
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Click-to-call
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Google Maps / location
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Social media integration
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Basic SEO setup
-
               </li>
-
 
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 14 days support
-
               </li>
-
 
             </ul>
-
 
 
             <a
@@ -2252,13 +1737,9 @@
 
               Get Started
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
@@ -2272,7 +1753,6 @@
             class="pricing-card pricing-featured reveal delay-1"
           >
 
-
             <div class="popular-badge">
               MOST POPULAR
             </div>
@@ -2280,165 +1760,84 @@
 
             <div class="pricing-top">
 
-
               <p class="package-label">
                 GROW
               </p>
 
-
               <h3>
-                Sell & Register
+                Sell Products Or Register Participants
               </h3>
 
-
               <p class="package-description">
-
                 A complete sales or registration system
                 for digital products, trainings,
                 workshops and events.
-
               </p>
-
 
               <div class="package-price">
                 From KES 30,000
               </div>
 
-
               <p class="package-note">
                 One-time implementation
               </p>
 
-
             </div>
-
 
 
             <ul class="package-features">
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Everything in Starter
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Up to 5-page sales or registration site
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Order or registration capture system
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 WhatsApp enquiry or support flow
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Online payment integration
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Product / event / training catalogue
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Customer or participant tracking
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Automated confirmation
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Analytics setup
-
               </li>
-
 
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 30 days support
-
               </li>
-
 
             </ul>
-
 
 
             <a
@@ -2448,188 +1847,102 @@
 
               Build My Sales System
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
-
 
           </article>
 
 
 
           <!-- =================================================
-               SCALE
+               AUTOMATE
           ================================================== -->
 
           <article
             class="pricing-card reveal delay-2"
           >
 
-
             <div class="pricing-top">
 
-
               <p class="package-label">
-                SCALE
+                AUTOMATE
               </p>
 
-
               <h3>
-                Automate & Manage
+                Automate Sales & Follow-Up
               </h3>
 
-
               <p class="package-description">
-
                 An advanced setup for selling,
                 registrations, reminders, delivery
                 and follow-up.
-
               </p>
-
 
               <div class="package-price">
                 From KES 55,000
               </div>
 
-
               <p class="package-note">
                 Custom implementation
               </p>
 
-
             </div>
-
 
 
             <ul class="package-features">
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Everything in Grow
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Advanced order or registration capture
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Automated follow-up and reminders
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Email / SMS / WhatsApp workflows
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Booking / appointment / event system
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Payment / order workflow
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Customer database
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Order and enquiry tracking
-
               </li>
 
-
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 Sales or registration dashboard
-
               </li>
-
 
               <li>
-
-                <i
-                  class="fa-solid fa-check"
-                  aria-hidden="true"
-                ></i>
-
+                <i class="fa-solid fa-check"></i>
                 60 days support
-
               </li>
-
 
             </ul>
-
 
 
             <a
@@ -2639,54 +1952,29 @@
 
               Automate My Sales Flow
 
-              <i
-                class="fa-solid fa-arrow-right"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-arrow-right"></i>
 
             </a>
 
-
           </article>
-
 
         </div>
 
-
-
-        <!-- =================================================
-             PACKAGE NOTE
-        ================================================== -->
 
         <div class="packages-note reveal">
 
-
-          <i
-            class="fa-solid fa-circle-info"
-            aria-hidden="true"
-          ></i>
-
+          <i class="fa-solid fa-circle-info"></i>
 
           <span>
-
             Need something different? We can customise
             a system around your business, product,
             event, training, customers and registration
-            process.
-
-            Final pricing depends on the pages,
-            content, integrations and functionality
-            required.
-
-            Third-party platform, domain, hosting,
-            SMS and payment provider fees are not
-            included unless agreed.
-
+            process. Third-party platform, domain,
+            hosting, SMS and payment provider fees are
+            not included unless agreed.
           </span>
 
-
         </div>
-
 
       </div>
 
@@ -2701,61 +1989,38 @@
     <section
       class="section about-section"
       id="about"
-      aria-labelledby="about-title"
     >
 
       <div class="container about-grid">
 
-
         <div class="section-heading reveal">
-
 
           <p class="eyebrow">
             WHY PRIORITYFIXA
           </p>
 
-
-          <h2 id="about-title">
-
+          <h2>
             Not Just A Website.
-
             <br>
-
             <span>
               A System That Works.
             </span>
-
           </h2>
-
 
         </div>
 
 
-
-        <div class="about-copy reveal delay-1">
-
-
-          <p>
-
-            PriorityFixa Agency combines web design,
-            digital commerce and workflow automation
-            to help businesses and organisations turn
-            their online presence into practical
-            business infrastructure.
-
-          </p>
-
+        <div
+          class="about-copy reveal delay-1"
+        >
 
           <p>
-
             We believe your digital presence should
             do more than look good. It should help
             your business get discovered, generate
             leads, collect payments, save time and
             serve customers better.
-
           </p>
-
 
 
           <div class="about-points">
@@ -2763,82 +2028,45 @@
 
             <div>
 
-              <i
-                class="fa-solid fa-check"
-                aria-hidden="true"
-              ></i>
-
+              <i class="fa-solid fa-check"></i>
 
               <span>
-
-                <b>
-                  Business-focused
-                </b>
-
+                <b>Business-focused</b>
                 &mdash;
-
                 technology built around your
                 actual goals.
-
               </span>
-
 
             </div>
 
 
-
             <div>
 
-              <i
-                class="fa-solid fa-check"
-                aria-hidden="true"
-              ></i>
-
+              <i class="fa-solid fa-check"></i>
 
               <span>
-
-                <b>
-                  Simple to manage
-                </b>
-
+                <b>Simple to manage</b>
                 &mdash;
-
                 systems your team can actually use.
-
               </span>
-
 
             </div>
 
 
-
             <div>
 
-              <i
-                class="fa-solid fa-check"
-                aria-hidden="true"
-              ></i>
-
+              <i class="fa-solid fa-check"></i>
 
               <span>
-
-                <b>
-                  Built to grow
-                </b>
-
+                <b>Built to grow</b>
                 &mdash;
-
                 solutions that can evolve with
                 your business.
-
               </span>
-
 
             </div>
 
-
           </div>
-
 
         </div>
 
@@ -2852,13 +2080,9 @@
          SYSTEMS
     ====================================================== -->
 
-    <section
-      class="clients section-sm"
-      aria-label="PriorityFixa capabilities"
-    >
+    <section class="clients section-sm">
 
       <div class="container">
-
 
         <p class="trust-label">
           SYSTEMS PRIORITYFIXA CAN BUILD
@@ -2867,39 +2091,31 @@
 
         <div class="client-logos">
 
-
           <span>
             Websites
           </span>
-
 
           <span>
             Landing Pages
           </span>
 
-
           <span>
             Payments
           </span>
-
 
           <span>
             Automation
           </span>
 
-
           <span>
             Dashboards
           </span>
-
 
           <span>
             CRM Workflows
           </span>
 
-
         </div>
-
 
       </div>
 
@@ -2914,49 +2130,36 @@
     <section
       class="section cta-section"
       id="contact"
-      aria-labelledby="contact-title"
     >
 
-      <div class="container cta-box reveal">
-
+      <div
+        class="container cta-box reveal"
+      >
 
         <div>
-
 
           <p class="eyebrow">
             LET'S BUILD SOMETHING BETTER
           </p>
 
-
-          <h2 id="contact-title">
-
+          <h2>
             Ready To Build Something
-
             <br>
-
             That
-
             <span>
               Works For Your Business?
             </span>
-
           </h2>
 
-
           <p>
-
             Let's build your website, digital
             system and automated workflows.
-
           </p>
-
 
         </div>
 
 
-
         <div class="cta-contact">
-
 
           <a
             class="btn btn-primary"
@@ -2965,36 +2168,26 @@
 
             Let's Talk About Your Project
 
-            <i
-              class="fa-solid fa-arrow-right"
-              aria-hidden="true"
-            ></i>
+            <i class="fa-solid fa-arrow-right"></i>
 
           </a>
 
 
           <a
             href="mailto:hello@priorityfixa.com"
-            aria-label="Email PriorityFixa Agency"
           >
 
-            <i
-              class="fa-solid fa-envelope"
-              aria-hidden="true"
-            ></i>
+            <i class="fa-solid fa-envelope"></i>
 
             hello@priorityfixa.com
 
           </a>
 
-
         </div>
-
 
       </div>
 
     </section>
-
 
   </main>
 
@@ -3005,7 +2198,6 @@
   ====================================================== -->
 
   <footer class="footer">
-
 
     <div class="container footer-main">
 
@@ -3035,48 +2227,33 @@
 
       <div class="footer-links">
 
-
         <a href="#top">
           Home
         </a>
-
 
         <a href="#services">
           Services
         </a>
 
-
         <a href="#work">
           Work
         </a>
-
 
         <a href="#packages">
           Packages
         </a>
 
+        <a href="#process">
+          Process
+        </a>
 
         <a href="#about">
           About
         </a>
 
-
         <a href="#contact">
           Contact
         </a>
-
-
-        <!-- Add these pages when created -->
-
-        <a href="#">
-          Privacy Policy
-        </a>
-
-
-        <a href="#">
-          Terms
-        </a>
-
 
       </div>
 
@@ -3131,13 +2308,13 @@
 
         </a>
 
-
       </div>
-
 
     </div>
 
 
+
+    <!-- COPYRIGHT -->
 
     <div class="container copyright">
 
@@ -3145,7 +2322,6 @@
       All rights reserved.
 
     </div>
-
 
   </footer>
 
@@ -3155,7 +2331,10 @@
        JAVASCRIPT
   ====================================================== -->
 
-  <script src="js/script.js"></script>
+  <script
+    src="js/script.js"
+    defer
+  ></script>
 
 
 </body>
