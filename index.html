@@ -1620,7 +1620,7 @@
          PACKAGES
     ====================================================== -->
 
-    <!-- =====================================================
+  <!-- =====================================================
          PACKAGES
 
          CTA behaviour by tier — all via WhatsApp, but with
@@ -1638,10 +1638,7 @@
          and enquiry-vs-booking intent, even though the channel
          is the same for all three.
 
-         ⚠️ REPLACE BEFORE GOING LIVE:
-         - WHATSAPP_NUMBER  → your WhatsApp Business number, digits
-                               only, country code, no + or leading 0
-                               e.g. 2547XXXXXXXX
+         WhatsApp number in use: 254739685458
     ====================================================== -->
 
     <section
@@ -1736,7 +1733,7 @@
 
 
             <a
-              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%20Starter%20package%20(Launch%20Online)."
+              href="https://wa.me/254739685458?text=Hi%2C%20I%27m%20interested%20in%20the%20Starter%20package%20(Launch%20Online)."
               class="btn btn-outline package-btn js-package-cta"
               data-package="starter"
               data-cta="whatsapp-contact"
@@ -1794,7 +1791,7 @@
 
 
             <a
-              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%20Grow%20package%20(Sell%20Products%20Or%20Register%20Participants)."
+              href="https://wa.me/254739685458?text=Hi%2C%20I%27m%20interested%20in%20the%20Grow%20package%20(Sell%20Products%20Or%20Register%20Participants)."
               class="btn btn-primary package-btn js-package-cta"
               data-package="grow"
               data-cta="whatsapp-contact"
@@ -1856,7 +1853,7 @@
 
 
             <a
-              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Automate%20package%20(Automate%20Sales%20%26%20Follow-Up)."
+              href="https://wa.me/254739685458?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Automate%20package%20(Automate%20Sales%20%26%20Follow-Up)."
               class="btn btn-outline package-btn js-package-cta"
               data-package="automate"
               data-cta="whatsapp-book"
@@ -1888,6 +1885,82 @@
 
     </section>
 
+
+    <!-- =====================================================
+         Supporting styles (merge into your existing stylesheet)
+    ====================================================== -->
+    <style>
+
+      .trust-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1.5rem 0 3rem;
+        padding: 1rem 0;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-muted, #6b7280);
+      }
+
+      .trust-item i {
+        color: var(--primary, #2563eb);
+      }
+
+      .package-note {
+        font-size: 0.75rem;
+        color: var(--text-muted, #9ca3af);
+        margin-top: 0.25rem;
+      }
+
+    </style>
+
+
+    <!-- =====================================================
+         Click tracking (GA4).
+         Fires an event with the package name + CTA type whenever
+         someone clicks a package button, BEFORE the browser
+         navigates away, so the click is never lost.
+
+         Requires gtag.js already loaded on the page. If you use
+         a different analytics tool (Meta Pixel, Plausible, etc.),
+         swap the gtag() call for that tool's event call — the
+         package/CTA data attributes stay the same either way.
+    ====================================================== -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        var ctaButtons = document.querySelectorAll('.js-package-cta');
+
+        ctaButtons.forEach(function (btn) {
+
+          btn.addEventListener('click', function (e) {
+
+            var pkg = btn.getAttribute('data-package');
+            var ctaType = btn.getAttribute('data-cta');
+
+            if (typeof gtag === 'function') {
+              gtag('event', 'package_cta_click', {
+                package: pkg,
+                cta_type: ctaType
+              });
+            }
+
+            // Fallback so you can verify events while testing,
+            // and a hook point if you add another analytics tool.
+            console.log('package_cta_click', { package: pkg, cta_type: ctaType });
+
+          });
+
+        });
+
+      });
+    </script>
 
     <!-- =====================================================
          Supporting styles (merge into your existing stylesheet)
