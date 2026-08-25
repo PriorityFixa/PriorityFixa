@@ -1620,6 +1620,30 @@
          PACKAGES
     ====================================================== -->
 
+    <!-- =====================================================
+         PACKAGES
+
+         CTA behaviour by tier — all via WhatsApp, but with
+         different pre-filled messages so intent is clear the
+         moment the chat opens:
+         - Starter / Grow  -> "I'm interested in the X package"
+                              (fast, low-friction enquiry).
+         - Automate        -> "I'd like to book a free consultation
+                              about the Automate package" (signals
+                              this is a scoping conversation, not
+                              an instant order).
+
+         All buttons carry data-package + data-cta attributes and
+         fire a GA4 event on click so you can see clicks-by-tier
+         and enquiry-vs-booking intent, even though the channel
+         is the same for all three.
+
+         ⚠️ REPLACE BEFORE GOING LIVE:
+         - WHATSAPP_NUMBER  → your WhatsApp Business number, digits
+                               only, country code, no + or leading 0
+                               e.g. 2547XXXXXXXX
+    ====================================================== -->
+
     <section
       class="section packages-section"
       id="packages"
@@ -1649,11 +1673,7 @@
         </div>
 
 
-        <!-- =================================================
-             TRUST STRIP
-             Reinforces value beyond price so prospects aren't
-             comparing on cost alone.
-        ================================================== -->
+        <!-- TRUST STRIP -->
         <div class="trust-strip reveal">
 
           <div class="trust-item">
@@ -1685,13 +1705,8 @@
 
             <div class="pricing-top">
 
-              <p class="package-label">
-                STARTER
-              </p>
-
-              <h3>
-                Launch Online
-              </h3>
+              <p class="package-label">STARTER</p>
+              <h3>Launch Online</h3>
 
               <p class="package-description">
                 A professional online presence for
@@ -1699,9 +1714,7 @@
                 enquiries or registrations.
               </p>
 
-              <div class="package-price">
-                From KES 15,000
-              </div>
+              <div class="package-price">From KES 15,000</div>
 
               <p class="package-note">
                 One-time implementation · excl. hosting &amp; domain
@@ -1711,59 +1724,27 @@
 
 
             <ul class="package-features">
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                One-page mobile-friendly website
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                WhatsApp integration
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Contact / enquiry / registration form
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Click-to-call
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Google Maps / location
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Social media integration
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Basic SEO setup
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                14 days support
-              </li>
-
+              <li><i class="fa-solid fa-check"></i> One-page mobile-friendly website</li>
+              <li><i class="fa-solid fa-check"></i> WhatsApp integration</li>
+              <li><i class="fa-solid fa-check"></i> Contact / enquiry / registration form</li>
+              <li><i class="fa-solid fa-check"></i> Click-to-call</li>
+              <li><i class="fa-solid fa-check"></i> Google Maps / location</li>
+              <li><i class="fa-solid fa-check"></i> Social media integration</li>
+              <li><i class="fa-solid fa-check"></i> Basic SEO setup</li>
+              <li><i class="fa-solid fa-check"></i> 14 days support</li>
             </ul>
 
 
             <a
-              href="#contact"
-              class="btn btn-outline package-btn"
+              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%20Starter%20package%20(Launch%20Online)."
+              class="btn btn-outline package-btn js-package-cta"
+              data-package="starter"
+              data-cta="whatsapp-contact"
+              target="_blank"
+              rel="noopener"
             >
-
               Get Started
-
               <i class="fa-solid fa-arrow-right"></i>
-
             </a>
 
           </article>
@@ -1774,24 +1755,14 @@
                GROW
           ================================================== -->
 
-          <article
-            class="pricing-card pricing-featured reveal delay-1"
-          >
+          <article class="pricing-card pricing-featured reveal delay-1">
 
-            <div class="popular-badge">
-              MOST POPULAR
-            </div>
-
+            <div class="popular-badge">MOST POPULAR</div>
 
             <div class="pricing-top">
 
-              <p class="package-label">
-                GROW
-              </p>
-
-              <h3>
-                Sell Products Or Register Participants
-              </h3>
+              <p class="package-label">GROW</p>
+              <h3>Sell Products Or Register Participants</h3>
 
               <p class="package-description">
                 A complete sales or registration system
@@ -1799,9 +1770,7 @@
                 workshops and events.
               </p>
 
-              <div class="package-price">
-                From KES 30,000
-              </div>
+              <div class="package-price">From KES 30,000</div>
 
               <p class="package-note">
                 One-time implementation · excl. payment &amp; hosting fees
@@ -1811,69 +1780,29 @@
 
 
             <ul class="package-features">
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Everything in Starter
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Up to 5-page sales or registration site
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Order or registration capture system
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                WhatsApp enquiry or support flow
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Online payment integration
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Product / event / training catalogue
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Customer or participant tracking
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Automated confirmation
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Analytics setup
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                30 days support
-              </li>
-
+              <li><i class="fa-solid fa-check"></i> Everything in Starter</li>
+              <li><i class="fa-solid fa-check"></i> Up to 5-page sales or registration site</li>
+              <li><i class="fa-solid fa-check"></i> Order or registration capture system</li>
+              <li><i class="fa-solid fa-check"></i> WhatsApp enquiry or support flow</li>
+              <li><i class="fa-solid fa-check"></i> Online payment integration</li>
+              <li><i class="fa-solid fa-check"></i> Product / event / training catalogue</li>
+              <li><i class="fa-solid fa-check"></i> Customer or participant tracking</li>
+              <li><i class="fa-solid fa-check"></i> Automated confirmation</li>
+              <li><i class="fa-solid fa-check"></i> Analytics setup</li>
+              <li><i class="fa-solid fa-check"></i> 30 days support</li>
             </ul>
 
 
             <a
-              href="#contact"
-              class="btn btn-primary package-btn"
+              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%20Grow%20package%20(Sell%20Products%20Or%20Register%20Participants)."
+              class="btn btn-primary package-btn js-package-cta"
+              data-package="grow"
+              data-cta="whatsapp-contact"
+              target="_blank"
+              rel="noopener"
             >
-
               Build My Sales System
-
               <i class="fa-solid fa-arrow-right"></i>
-
             </a>
 
           </article>
@@ -1882,25 +1811,19 @@
 
           <!-- =================================================
                AUTOMATE
-               Widest scope variance — priced as a starting point
-               with a consultation-style CTA rather than a direct
-               "buy now" action, and an explicit note that final
-               cost depends on the integrations chosen.
+               Consultation-first CTA — same WhatsApp channel as
+               the other tiers, but the pre-filled message frames
+               it as booking a scoping conversation rather than
+               placing an order, since final price depends on the
+               integrations chosen.
           ================================================== -->
 
-          <article
-            class="pricing-card reveal delay-2"
-          >
+          <article class="pricing-card reveal delay-2">
 
             <div class="pricing-top">
 
-              <p class="package-label">
-                AUTOMATE
-              </p>
-
-              <h3>
-                Automate Sales & Follow-Up
-              </h3>
+              <p class="package-label">AUTOMATE</p>
+              <h3>Automate Sales & Follow-Up</h3>
 
               <p class="package-description">
                 An advanced setup for selling,
@@ -1908,9 +1831,7 @@
                 and follow-up.
               </p>
 
-              <div class="package-price">
-                From KES 55,000
-              </div>
+              <div class="package-price">From KES 55,000</div>
 
               <p class="package-note">
                 Custom implementation · final price depends on
@@ -1921,69 +1842,29 @@
 
 
             <ul class="package-features">
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Everything in Grow
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Advanced order or registration capture
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Automated follow-up and reminders
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Email / SMS / WhatsApp workflows
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Booking / appointment / event system
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Payment / order workflow
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Customer database
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Order and enquiry tracking
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Sales or registration dashboard
-              </li>
-
-              <li>
-                <i class="fa-solid fa-check"></i>
-                60 days support
-              </li>
-
+              <li><i class="fa-solid fa-check"></i> Everything in Grow</li>
+              <li><i class="fa-solid fa-check"></i> Advanced order or registration capture</li>
+              <li><i class="fa-solid fa-check"></i> Automated follow-up and reminders</li>
+              <li><i class="fa-solid fa-check"></i> Email / SMS / WhatsApp workflows</li>
+              <li><i class="fa-solid fa-check"></i> Booking / appointment / event system</li>
+              <li><i class="fa-solid fa-check"></i> Payment / order workflow</li>
+              <li><i class="fa-solid fa-check"></i> Customer database</li>
+              <li><i class="fa-solid fa-check"></i> Order and enquiry tracking</li>
+              <li><i class="fa-solid fa-check"></i> Sales or registration dashboard</li>
+              <li><i class="fa-solid fa-check"></i> 60 days support</li>
             </ul>
 
 
             <a
-              href="#contact"
-              class="btn btn-outline package-btn"
+              href="https://wa.me/WHATSAPP_NUMBER?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Automate%20package%20(Automate%20Sales%20%26%20Follow-Up)."
+              class="btn btn-outline package-btn js-package-cta"
+              data-package="automate"
+              data-cta="whatsapp-book"
+              target="_blank"
+              rel="noopener"
             >
-
               Book A Free Consultation
-
               <i class="fa-solid fa-arrow-right"></i>
-
             </a>
 
           </article>
@@ -1992,9 +1873,7 @@
 
 
         <div class="packages-note reveal">
-
           <i class="fa-solid fa-circle-info"></i>
-
           <span>
             Need something different? We can customise
             a system around your business, product,
@@ -2003,13 +1882,88 @@
             hosting, SMS and payment provider fees are
             not included unless agreed.
           </span>
-
         </div>
 
       </div>
 
     </section>
 
+
+    <!-- =====================================================
+         Supporting styles (merge into your existing stylesheet)
+    ====================================================== -->
+    <style>
+
+      .trust-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1.5rem 0 3rem;
+        padding: 1rem 0;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-muted, #6b7280);
+      }
+
+      .trust-item i {
+        color: var(--primary, #2563eb);
+      }
+
+      .package-note {
+        font-size: 0.75rem;
+        color: var(--text-muted, #9ca3af);
+        margin-top: 0.25rem;
+      }
+
+    </style>
+
+
+    <!-- =====================================================
+         Click tracking (GA4).
+         Fires an event with the package name + CTA type whenever
+         someone clicks a package button, BEFORE the browser
+         navigates away, so the click is never lost.
+
+         Requires gtag.js already loaded on the page. If you use
+         a different analytics tool (Meta Pixel, Plausible, etc.),
+         swap the gtag() call for that tool's event call — the
+         package/CTA data attributes stay the same either way.
+    ====================================================== -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        var ctaButtons = document.querySelectorAll('.js-package-cta');
+
+        ctaButtons.forEach(function (btn) {
+
+          btn.addEventListener('click', function (e) {
+
+            var pkg = btn.getAttribute('data-package');
+            var ctaType = btn.getAttribute('data-cta');
+
+            if (typeof gtag === 'function') {
+              gtag('event', 'package_cta_click', {
+                package: pkg,
+                cta_type: ctaType
+              });
+            }
+
+            // Fallback so you can verify events while testing,
+            // and a hook point if you add another analytics tool.
+            console.log('package_cta_click', { package: pkg, cta_type: ctaType });
+
+          });
+
+        });
+
+      });
+    </script>
 
     <!-- =====================================================
          Suggested supporting styles for the trust strip and
