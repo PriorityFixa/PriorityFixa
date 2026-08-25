@@ -1649,6 +1649,31 @@
         </div>
 
 
+        <!-- =================================================
+             TRUST STRIP
+             Reinforces value beyond price so prospects aren't
+             comparing on cost alone.
+        ================================================== -->
+        <div class="trust-strip reveal">
+
+          <div class="trust-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Live in as little as 7 days</span>
+          </div>
+
+          <div class="trust-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Built for Kenyan SMEs — M-Pesa, WhatsApp &amp; SMS ready</span>
+          </div>
+
+          <div class="trust-item">
+            <i class="fa-solid fa-headset"></i>
+            <span>Local support included in every package</span>
+          </div>
+
+        </div>
+
+
         <div class="pricing-grid">
 
 
@@ -1679,7 +1704,7 @@
               </div>
 
               <p class="package-note">
-                One-time implementation
+                One-time implementation · excl. hosting &amp; domain
               </p>
 
             </div>
@@ -1779,7 +1804,7 @@
               </div>
 
               <p class="package-note">
-                One-time implementation
+                One-time implementation · excl. payment &amp; hosting fees
               </p>
 
             </div>
@@ -1857,6 +1882,10 @@
 
           <!-- =================================================
                AUTOMATE
+               Widest scope variance — priced as a starting point
+               with a consultation-style CTA rather than a direct
+               "buy now" action, and an explicit note that final
+               cost depends on the integrations chosen.
           ================================================== -->
 
           <article
@@ -1884,7 +1913,8 @@
               </div>
 
               <p class="package-note">
-                Custom implementation
+                Custom implementation · final price depends on
+                integrations required
               </p>
 
             </div>
@@ -1950,7 +1980,7 @@
               class="btn btn-outline package-btn"
             >
 
-              Automate My Sales Flow
+              Book A Free Consultation
 
               <i class="fa-solid fa-arrow-right"></i>
 
@@ -1981,6 +2011,41 @@
     </section>
 
 
+    <!-- =====================================================
+         Suggested supporting styles for the trust strip and
+         package note microcopy added above. Merge into your
+         existing stylesheet / add near .pricing-grid styles.
+    ====================================================== -->
+    <style>
+
+      .trust-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1.5rem 0 3rem;
+        padding: 1rem 0;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-muted, #6b7280);
+      }
+
+      .trust-item i {
+        color: var(--primary, #2563eb);
+      }
+
+      .package-note {
+        font-size: 0.75rem;
+        color: var(--text-muted, #9ca3af);
+        margin-top: 0.25rem;
+      }
+
+    </style>
 
     <!-- =====================================================
          ABOUT
